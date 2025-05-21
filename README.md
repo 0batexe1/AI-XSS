@@ -26,8 +26,9 @@ Bu proje, **yerel GPT modeli (Ollama Mistral)** kullanarak otomatik XSS payloadl
 
 ## Kurulum
 
-1. Ollama'yı kur ve çalıştır:
-   ```bash
+1. Ollama'yı kur (5.5-7 GB RAM 4-5 GB Harddisk) : curl -fsSL https://ollama.com/install.sh | sh
+
+   
    
 ----
 
@@ -38,6 +39,6 @@ Bu proje, **yerel GPT modeli (Ollama Mistral)** kullanarak otomatik XSS payloadl
    Örnek GET isteği ile test
    python3 xssgen.py --url "http://hedef.com/search?q=test" --param q --method GET
 
-    Örnek POST isteği ile test
+   Örnek POST isteği ile test
    python3 xssgen.py --url "http://hedef.com/search" --param q --method POST --data "q=test"
 
